@@ -12,7 +12,7 @@ public class WordDictionaryImpl implements WordDictionary {
 
     public WordDictionaryImpl() {
         try {
-            URL url = new URL("http://www.plumbeegames.com/codetest/wordlist.txt");
+            URL url = new URL("https://raw.githubusercontent.com/AManuev/TestTasks/master/wordlist.txt");
             URLConnection dc = url.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(dc.getInputStream()));
             String inputLine;
